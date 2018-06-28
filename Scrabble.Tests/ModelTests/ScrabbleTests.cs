@@ -5,22 +5,14 @@ using System;
 using Scrabble;
 namespace Scrabble.Tests
 {
-
   [TestClass]
   public class ScrabbleTest
   {
     [TestMethod]
-    public void TestWord()
+    public void wordScore()
     {
-
-      ScrabbleScore word = new ScrabbleScore("A");
-
-      Assert.AreEqual(1, word.returnFinalScore());
+      ScrabbleScore word = new ScrabbleScore("AAA");
+      Assert.AreEqual(3, word.wordScore());
     }
-
-
   }
-
-
-
 }
